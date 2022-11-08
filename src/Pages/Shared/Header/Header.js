@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/Logo/logo.svg'
+import logo from '../../../assets/logo/logo.svg';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
+import './Header.css';
 const Header = () => {
 
   const {user, logOut} = useContext(AuthContext)
@@ -12,21 +13,21 @@ const Header = () => {
 }
 
 const menuItems = <>
-    <li className='font-semibold theme-color'><Link to='/'>Home</Link></li>
+    <li className='font-semibold text-white nav-menu'><Link to='/'>Home</Link></li>
     {
         user?.email ?
             <>
-                <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
+                <li className='font-semibold text-white nav-menu'><Link to='/orders'>Orders</Link></li>
                 <li className='font-semibold'>
-                    <button onClick={ handleLogOut } className='btn-ghost'>Sign Out</button>
+                    <button onClick={ handleLogOut } className='btn-ghost text-white nav-menu'>Sign Out</button>
                 </li>
             </>
             :
-            <li className='font-semibold'><Link to='/login'>Login</Link></li>
+            <li className='font-semibold nav-menu text-white'><Link to='/login'>Login</Link></li>
     }
 </>
     return (
-        <div className="navbar h-20 mb-12 pt-12 bg-base-100">
+        <div className="navbar h-28 px-5 py-3 bg-secondary-color">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -36,7 +37,7 @@ const menuItems = <>
             {menuItems}
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost normal-case text-xl">
+          <Link to='/' className="w-40">
             <img src={logo} alt="" />
           </Link>
         </div>
@@ -46,7 +47,7 @@ const menuItems = <>
           </ul>
         </div>
         <div className="navbar-end">
-        <button className="btn btn-outline btn-warning theme-color">Contact</button>
+        <button className="btn  bg-theme-color">Contact</button>
         </div>
       </div>
     );

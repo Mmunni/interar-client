@@ -1,3 +1,9 @@
 .theme-color{
   color: #B98E75;
 }
+.bg-theme-color{
+  background-color: #B98E75;
+}
+.bg-secondary-color{
+  background-color: #252531;
+}
