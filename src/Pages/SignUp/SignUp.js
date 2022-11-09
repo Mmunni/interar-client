@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import { setAuthToken } from '../../api/auth';
 import img from '../../assets/login/login.webp';
  import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 
 const Signup = () => {
 
      const {createUser} = useContext(AuthContext);
+     useTitle('signUp')
     const handleSignUp = event =>{
         event.preventDefault();
         const form = event.target;
