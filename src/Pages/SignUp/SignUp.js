@@ -2,6 +2,7 @@ import React from 'react';
  import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { setAuthToken } from '../../api/auth';
+
 import img from '../../assets/login/login.webp';
  import { AuthContext } from '../../context/AuthProvider/AuthProvider';
 import useTitle from '../../hooks/useTitle';
