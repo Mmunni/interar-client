@@ -1,0 +1,22 @@
+
+.process-icon {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #353542;
+    box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.1);
+    height: 148px;
+    width: 148px;
+    line-height: 148px;
+    margin: 0 auto;
+    z-index: 1;
+    border-radius: 50%;
+    transition: .3s;
+}
+.process-icon:hover {
+    background-color: #B98E75;
+    color: #fff;
+   
+}
+
