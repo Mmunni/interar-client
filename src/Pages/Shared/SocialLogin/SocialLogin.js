@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { setAuthToken } from '../../../api/auth';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import { useLocation, useNavigate } from "react-router-dom";
+import {  FaGoogle } from 'react-icons/fa';
 
 const SocialLogin = () => {
 
@@ -23,9 +24,9 @@ const SocialLogin = () => {
     }
     return (
         <div>
-            <p className='text-center'>Social Login</p>
+            
             <p className='text-center'>
-                <button onClick={handelGoogleSignIn} className='btn btn-ghost'>Google</button>
+                <button onClick={handelGoogleSignIn} className='btn bg-theme-color mt-2 '><FaGoogle/> Google</button>
             </p>
         </div>
     );

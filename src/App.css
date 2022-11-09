@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
 .theme-color{
   color: #B98E75;
 }
@@ -6,4 +13,51 @@
 }
 .bg-secondary-color{
   background-color: #252531;
+}
+
+.animate-btn{
+  position: relative;
+  display: inline-block;
+  color: #2d3941;
+  background: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: 1;
+  letter-spacing: 1px;
+  border: 1px solid  #B98E75;
+  transition: all 300ms ease-out 0s;
+  padding: 10px 32px;
+  font-size: 14px;
+}
+.animate-btn::before{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: rgba(185, 142, 117, 0.9);
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  
+  transition: all 300ms ease-out 0s;
+}
+.animate-btn::after{
+  content: "";
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  background: rgba(185, 142, 117, 0.9);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 300ms ease-out 0s;
+}
+.animate-btn:hover {
+  color: #fff;
+}
+.animate-btn:hover:before, .animate-btn:hover:after {
+  width: 100%;
+  height: 100%;
+  background:  #B98E75;
 }

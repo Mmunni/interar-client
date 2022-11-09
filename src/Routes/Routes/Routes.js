@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import Services from "../../Pages/Services/Services";
 import Signup from "../../Pages/SignUp/SignUp";
+import pageNotFound from "../../assets/pageNotFound/pageNotFound.jpg"
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
         },
         {
             path:'*',
-            element: <h3>Page not found 404</h3>
+            element: <img className="mx-auto" src={pageNotFound} alt="" />
         }
     
 ])

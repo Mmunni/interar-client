@@ -20,7 +20,7 @@ const BannerItems = ({slide}) => {
           </p>
         </div>
         <div className="absolute flex justify-start transform -translate-y-1/2 left-32 top-2/3">
-          <button className="btn animate-btn text-white">Read More</button>
+          <button className=" animate-btn text-white">Read More</button>
           
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
