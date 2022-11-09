@@ -1,13 +1,53 @@
 import React from 'react';
 import './Testimonial.css';
-import img1 from '../../../assets/testimonials/01.png';
-import img2 from '../../../assets/testimonials/02.png';
-import img3 from '../../../assets/testimonials/03.png';
+
+import img1 from '../../../assets/testimonials/01.jpg';
+import img2 from '../../../assets/testimonials/02.jpg';
+import img3 from '../../../assets/testimonials/03.jpg';
+import img4 from '../../../assets/testimonials/04.jpg';
 
 const Testimonial = () => {
+
     return (
-        <div>
-            
+        <div className='max-w-screen-xl mx-auto py-32'>
+              <div className="title text-center">
+          <p className="font-bold theme-color py-5 text-xl">Met Our Team</p>
+          <h1 className="text-6xl font-bold  pb-24">
+          Let's See Our <span className='theme-color'> Expert</span>  <br/>
+          Engineers
+          </h1>
+        </div>
+        <div className="testimonial-area flex">
+        <div className="single-member w-80 mr-10">
+                <img className='' src={img1} alt="" />
+                <div className="details text-center">
+                <h3 className=' pt-3 text-2xl font-bold secondary-color'>Jhon Doe</h3>
+                <p className='text-base theme-color  font-semibold'>Interior Desinger</p>
+                </div>
+            </div>
+            <div className="single-member w-80 mr-10">
+                <img className='' src={img2} alt="" />
+                <div className="details text-center">
+                <h3 className=' pt-3 text-2xl font-bold secondary-color'>Alica Bendor</h3>
+                <p className='text-base theme-color  font-semibold'>Interior Desinger</p>
+                </div>
+            </div>
+            <div className="single-member w-80 mr-10">
+                <img src={img3} alt="" />
+                <div className="details text-center">
+                <h3 className=' pt-3 text-2xl font-bold secondary-color'>Robert Tylor</h3>
+                <p className='text-base theme-color  font-semibold'>Interior Desinger</p>
+                </div>
+            </div>
+            <div className="single-member w-80">
+                <img src={img4} alt="" />
+                <div className="details text-center">
+                <h3 className=' pt-3 text-2xl font-bold secondary-color'>Sebastian Turner</h3>
+                <p className='text-base theme-color  font-semibold'>Interior Desinger</p>
+                </div>
+            </div>
+        </div>
+
         </div>
     );
 };

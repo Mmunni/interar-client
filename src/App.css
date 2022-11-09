@@ -11,6 +11,9 @@ body{
 .bg-theme-color{
   background-color: #B98E75;
 }
+.secondary-color{
+  color: #2d3941;
+}
 .bg-secondary-color{
   background-color: #252531;
 }
