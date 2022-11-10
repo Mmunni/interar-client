@@ -1,0 +1,47 @@
+[
+    {
+       
+        "service_id": "01",
+        "title": "Home Office",
+        "img": "https://ibb.co/zGmJVpX",
+        "price": "20.00",
+        "description": "Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. An interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design."
+    },
+    {
+       
+        "service_id": "02",
+        "title": "Light Decoration",
+        "img": "https://ibb.co/PYTdGH4",
+        "price": "20.00",
+        "description": "The arrival of LED lighting has ensured that light sources are nowadays available in many different colour temperatures. Therefore, it is not as obvious anymore which light colour should be used for your home or business. Every space has a different function. In general, the activities in a room determine which light colour is needed. When you are at work, you usually need more light than when you spend an evening at home with friends or family. With warm colour temperatures, it is mainly a matter of personal taste. These Kelvin values vary between 1800K and 3000K. In this blog, we will give you various guidelines about the light colour or range that is the most suitable for a particular space in your home or business."
+    },
+    {
+        "service_id": "03",
+        "title": "Kitchen Design",
+        "img": "https://ibb.co/WKftjKc",
+        "price": "20.00",
+        "description": "Your kitchen should be your happy place. Face it, you're going to spend a lot of time cooking, cleaning and organizing in the kitchen, so it might as well be somewhere you enjoy spending time. Just because your kitchen is small, doesn't mean it has to feel small. We've rounded up 60 small kitchen ideas to help you maximize your space and make even super compact kitchens feel way bigger than they actually are. As you explore this photo gallery of fresh kitchen ideas, youll find a ton of decorating hacks and remodeling tips that are brilliant if you're on a budget. A peek at whats to come: using mirrors to create the illusion of more space, adding light and bright colors to enliven an interior and breakfast nook ideas that maximize the narrowest of spaces. We've also rounded up storage solutions and organization tips that'll keep your kitchen clean and orderly — like how to build a makeshift spice rack. And renters, don't worry: we've sprinkled in creative design ideas that don't have to be permanent. Whether your personal design style is modern, minimalist or you have an affinity for a French country kitchen, we guarantee you'll find an interior to love. We challenge you to embrace clever ways to create more counter space, take advantage of underutilized drawers and make use of blank walls. You'll even learn how to incorporate the top kitchen design trends for 2022 (like backsplash tile ideas and sought-after paint options) into the corners, nooks and crevices of your home. Promise, the final result will be more than worth it."
+    },
+    {
+       
+        "service_id": "04",
+        "title": "BedRoom Decoration",
+        "img": "https://ibb.co/BrshhD5",
+        "price": "20.00",
+        "description": "Pendant lights provide a suitable space-saving bedroom light design as they do not occupy floor space, unlike traditional bedside lamps. You can hang glass pendant lights that spread maximum light in the room. Alternately, you can pick colourful designs for the pendant lights and match the bedroom decor with these small bedroom lighting ideas."
+    },
+    {
+        "service_id": "05",
+        "title": "Living Room Decoration",
+        "img": "https://ibb.co/NmpnsSP",
+        "price": "20.00",
+        "description": "The industrial-style interior design is quite popular among homeowners. You can go for light bulbs suspended in a metal frame to achieve an industrial effect. You can augment the look with a brick texture wall. Vintage-era electric lanterns and metallic pendant light fixtures are other lights for the bedroom you can try."
+    },
+    {
+        "service_id": "06",
+        "title": "BathRoom Decoration",
+        "img": "https://ibb.co/6gFQTJF",
+        "price": "20.00",
+        "description": "There's lighting and wall tile and paint and flooring and all the cool accessories in between. We know, decorating a bathroom can be fun and overwhelming. Not sure where to start? We have splashing bathroom ideas for every style: modern and minimal, warm and rustic, small and cozy and more. Ahead: star-worthy bathroom inspiration — including this cozy design by HGTV host Jasmine Roth."
+    }
+]
