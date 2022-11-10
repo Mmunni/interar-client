@@ -1,16 +1,11 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import useTitle from '../../hooks/useTitle';
-import Banner from '../Home/Banner/Banner';
-import SevicesCard from './ServicesCard';
+import { Link } from 'react-router-dom';
+import SevicesCard from '../../Services/ServicesCard';
 
-const Services = () => {
-    useTitle('services');
-    const services = useLoaderData();
+const Service = ({services}) => {
     return (
         <div>
-            <Banner/>
-            <div className='max-w-screen-xl mx-auto pt-32 Pb-32'>
+            <div className='max-w-screen-xl mx-auto pt-10 Pb-32'>
             <div className="title text-center">
             <p className="font-bold theme-color py-5 text-xl">Our Services</p>
             <h1 className="text_2xl md: text-3xl lg:text-6xl font-bold  pb-24">
@@ -27,9 +22,12 @@ const Services = () => {
                     </SevicesCard>)
                 }
         </div>
+        <Link to={'/services'}>
+            <button className="btn bg-theme-color w-1/2 mt-12 mx-auto">See All</button>
+            </Link>
             </div>
         </div>
     );
 };
 
-export default Services;
+export default Service;

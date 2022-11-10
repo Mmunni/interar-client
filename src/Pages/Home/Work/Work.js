@@ -4,7 +4,7 @@ import "./Works.css";
 
 const Work = () => {
   return (
-    <div className="bg-secondary-color pt-24">
+    <div className="bg-secondary-color pt-24 mt-24">
       <div className="works max-w-screen-xl mx-auto pb-44">
         <div className="title text-center">
           <p className="font-bold theme-color py-5 text-xl">How We Works</p>

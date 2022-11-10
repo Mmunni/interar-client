@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const ServicesDetails = () => {
     const servicesDetails = useLoaderData();
-    const { title, description, img } = servicesDetails;
+    const { title,price, description, img } = servicesDetails;
     return (
         <div className='max-w-screen-xl mx-auto pt-32'>
             <div className="card full h-full bg-base-100 shadow-xl mb-4">
@@ -16,6 +16,7 @@ const ServicesDetails = () => {
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title my-5 theme-color">{title}</h2>
+          <p className="text-2xl font-semibold text-orange-500"> ${price}</p>
           <p>{description}</p>
           
         </div>
