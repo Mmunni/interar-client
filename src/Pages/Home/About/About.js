@@ -5,18 +5,18 @@ const About = () => {
   return (
     <div className="hero min-h-screen pt-24 pb-24">
       <div className="hero-content flex-col lg:flex-row">
-        <div className="w-1/2">
+        <div className=" w-full lg:w-1/2 mx-auto">
           <img
             src={about}
             alt=""
-            className="w-4/5 h-full rounded-lg shadow-2xl"
+            className=" h-full rounded-lg shadow-2xl"
           />
         </div>
-        <div className="w-1/2">
+        <div className=" w-full lg:w-1/2">
           <p className="font-bold theme-color py-5 text-xl">
             About Our Company
           </p>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl lg:text-5xl font-bold">
             Providing the best <br />
             <span className="theme-color">architecture</span> & interior <br />
             design services
