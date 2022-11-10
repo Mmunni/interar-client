@@ -6,11 +6,11 @@ const ServicesDetails = () => {
     const servicesDetails = useLoaderData();
     const { title,price, description, img, _id } = servicesDetails;
 
-    useEffect(() => {
-      fetch(`http://localhost:5000/services/${service}`)
-          .then(res => res.json())
-          .then(data => setOrderService(data));
-  }, [service])
+  //   useEffect(() => {
+  //     fetch(`http://localhost:5000/services/${service}`)
+  //         .then(res => res.json())
+  //         .then(data => setService(data));
+  // }, [service])
 
     return (
         <div className='max-w-screen-xl mx-auto pt-32'>

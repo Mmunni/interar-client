@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 
-const ReviewOrder = ({ order, handleDelete, handleStatusUpdate }) => {
-    const { _id, serviceName, phone, customer, price, service, status } = order;
-    const [orderService, setOrderService] = useState({})
+const ReviewOrder = ({ review, handleDelete, handleStatusUpdate }) => {
+    const { _id, serviceName, phone, customer, price, service, status } = review;
+    const [reviewService, setreviewService] = useState({})
 
     useEffect(() => {
         fetch(`http://localhost:5000/services/${service}`)
             .then(res => res.json())
-            .then(data => setOrderService(data));
+            .then(data => setreviewService(data));
     }, [])
     return (
         <div>
             <tr>
             <th>
                 <label>
-                    <button onClick={() => handleDelete(_id)} className='btn btn-warning'>X</button>
+                    <button onClick={() => handleDelete(_id)} className='btn btn-error'>X</button>
                 </label>
             </th>
             <td>
@@ -22,8 +22,8 @@ const ReviewOrder = ({ order, handleDelete, handleStatusUpdate }) => {
                     <div className="avatar">
                         <div className="rounded w-24 h-24">
                             {
-                                orderService?.img && 
-                                <img src={orderService.img} alt="Avatar Tailwind CSS Component" />}
+                                reviewService?.img && 
+                                <img src={reviewService.img} alt="Avatar Tailwind CSS Component" />}
                         </div>
                     </div>
                     <div>

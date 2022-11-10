@@ -5,7 +5,7 @@ import ReviewOrder from './ReviewOrder';
 
 const Review = () => {
     const { user, logOut } = useContext(AuthContext);
-    const [orders, setOrders] = useState([])
+    const [reviews, setreviews] = useState([])
 
     useEffect(() => {
         fetch(`http://localhost:5000/review?email=${user?.email}`, {
@@ -20,7 +20,7 @@ const Review = () => {
                 return res.json();
             })
             .then(data => {
-                setOrders(data);
+                setreviews(data);
             })
     }, [user?.email, logOut])
 
@@ -37,8 +37,8 @@ const Review = () => {
                 .then(data => {
                     if (data.deletedCount > 0) {
                         alert('deleted successfully');
-                        const remaining = orders.filter(odr => odr._id !== id);
-                        setOrders(remaining);
+                        const remaining = reviews.filter(rvw => rvw._id !== id);
+                        setreviews(remaining);
                     }
                 })
         }
@@ -57,26 +57,26 @@ const Review = () => {
             .then(data => {
                 console.log(data);
                 if (data.modifiedCount > 0) {
-                    const remaining = orders.filter(odr => odr._id !== id);
-                    const approving = orders.find(odr => odr._id === id);
+                    const remaining = reviews.filter(rvw => rvw._id !== id);
+                    const approving = reviews.find(rvw => rvw._id === id);
                     approving.status = 'Approved'
 
-                    const newOrders = [approving, ...remaining];
-                    setOrders(newOrders);
+                    const newreviews = [approving, ...remaining];
+                    setreviews(newreviews);
                 }
             })
     }
     return (
         <div className='max-w-screen-xl mx-auto pt-32'>
-            <h2 className="text-3xl lg:text-5xl">You have {orders.length} Orders</h2>
+            <h2 className="text-3xl lg:text-5xl">You have {reviews.length} reviews</h2>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full mt-10">
                     
                     <tbody>
                         {
-                            orders.map(order => <ReviewOrder
-                                key={order._id}
-                                order={order}
+                            reviews.map(review => <ReviewOrder
+                                key={review._id}
+                                review={review}
                                 handleDelete={handleDelete}
                                 handleStatusUpdate={handleStatusUpdate}
                             ></ReviewOrder>)
