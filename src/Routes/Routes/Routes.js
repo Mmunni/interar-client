@@ -21,19 +21,19 @@ const router = createBrowserRouter([
             children: [
                 {
                     path:'/',
-                    loader: () => fetch('http://localhost:5000/services'),
+                    loader: () => fetch('https://interar-server.vercel.app/services'),
                     element:<Home/>
 
                 },
                 
                 {
                     path: '/services',
-                    loader: () => fetch('http://localhost:5000/servicesAll'),
+                    loader: () => fetch('https://interar-server.vercel.app/servicesAll'),
                     element: <Services/>,
                 },
                 {
                     path: '/services/:id',
-                    loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`),
+                    loader: ({params}) => fetch(`https://interar-server.vercel.app/services/${params.id}`),
                     element: <ServicesDetails/>,
                 },
                 {
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
                 {
                     path: '/reviewform/:id',
                     element: <PrivateRoute><ReviewForm/></PrivateRoute>,
-                    loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+                    loader: ({params})=> fetch(`https://interar-server.vercel.app/services/${params.id}`)
                 },
                 {
                     path: 'addservices',

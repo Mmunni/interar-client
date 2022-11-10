@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 const ReviewOrder = ({ review, handleDelete, handleStatusUpdate }) => {
-    const { _id, serviceName, phone, customer, price, service, status } = review;
+    const { _id, serviceName,phone, message, customer, price, service, status } = review;
     const [reviewService, setreviewService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${service}`)
+        fetch(`https://interar-server.vercel.app/services/${service}`)
             .then(res => res.json())
             .then(data => setreviewService(data));
     }, [])
@@ -28,7 +28,7 @@ const ReviewOrder = ({ review, handleDelete, handleStatusUpdate }) => {
                     </div>
                     <div>
                         <div className="font-bold">{customer}</div>
-                        <div className="text-sm opacity-50">{phone}</div>
+                        <div className="text-sm opacity-50">{message}</div>
                     </div>
                 </div>
             </td>
@@ -37,7 +37,7 @@ const ReviewOrder = ({ review, handleDelete, handleStatusUpdate }) => {
                 <br />
                 <span className="badge badge-ghost badge-sm">${price}</span>
             </td>
-            <td>Purple</td>
+            <td>{phone}</td>
             <th>
                 <button 
                 onClick={() => handleStatusUpdate(_id)}
