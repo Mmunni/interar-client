@@ -1,3 +1,7 @@
+.single-member img{
+    transition: .3s;
+}
 .single-member img:hover{
-    transform: scale(1);
+    transform: scale(1.1);
+   
 }
