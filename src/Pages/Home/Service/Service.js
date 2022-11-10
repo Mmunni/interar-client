@@ -23,7 +23,7 @@ const Service = ({services}) => {
                 }
         </div>
         <Link to={'/services'}>
-            <button className="btn bg-theme-color w-1/2 mt-12 mx-auto">See All</button>
+            <button className="btn bg-theme-color text-center mt-12 mx-auto">See All</button>
             </Link>
             </div>
         </div>

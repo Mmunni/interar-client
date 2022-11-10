@@ -19,7 +19,7 @@
         .then(data => {
             console.log(data);
             // local storage is the easiest but not the best place to store jwt token
-            localStorage.setItem('genius-token', data.token);
+            localStorage.setItem('interar-token', data.token);
             //  navigate(from, { replace: true });
         });
 }

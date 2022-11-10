@@ -19,10 +19,12 @@ const menuItems = <>
     {
         user?.email ?
             <>
-                
+                <li className='font-semibold text-white nav-menu'><Link to='/addservices'>Add Services</Link></li>
+                <li className='font-semibold text-white nav-menu'><Link to='/review'>My Review</Link></li>
                 <li className='font-semibold'>
                     <button onClick={ handleLogOut } className='btn-ghost text-white nav-menu'>Sign Out</button>
                 </li>
+                
             </>
             :
             <li className='font-semibold nav-menu text-white'><Link to='/login'>Login</Link></li>
